@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".activity.MainActivity"
-            android:screenOrientation="landscape"></activity>
+            android:screenOrientation="landscape" />
         <!-- <activity -->
         <!-- android:name=".activity.Activity_Guide" -->
         <!-- android:screenOrientation="landscape"/> -->
@@ -32,7 +32,7 @@
             android:screenOrientation="landscape" />
         <activity
             android:name=".activity.gongjiaoActivity"
-            android:screenOrientation="landscape"></activity>
+            android:screenOrientation="landscape" />
         <activity
             android:name=".activity.ZHGLActivity"
             android:screenOrientation="landscape" />
@@ -41,23 +41,19 @@
             android:screenOrientation="landscape" />
         <activity
             android:name=".activity.LukangActivity"
-            android:screenOrientation="landscape"></activity>
+            android:screenOrientation="landscape" />
         <activity
             android:name=".activity.PersonActivity"
-            android:screenOrientation="landscape">
-
-        </activity>
+            android:screenOrientation="landscape"></activity>
         <activity
             android:name=".activity.NewsActivity"
-            android:screenOrientation="landscape"></activity>
+            android:screenOrientation="landscape" />
         <activity
             android:name=".activity.WebActivity"
             android:screenOrientation="landscape" />
-
         <activity
             android:name=".activity.CarWeizhangActivity"
             android:screenOrientation="landscape" />
-
         <activity
             android:name=".activity.CarWeizhangImageActivity"
             android:screenOrientation="landscape" />
@@ -68,6 +64,7 @@
         <activity
             android:name=".activity.SJFXActivity"
             android:screenOrientation="landscape" />
+        <activity android:name=".activity.RecycleActivity"></activity>
     </application>
 
 </manifest>

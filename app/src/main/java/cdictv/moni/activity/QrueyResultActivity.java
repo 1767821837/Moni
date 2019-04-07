@@ -3,6 +3,7 @@ package cdictv.moni.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -57,7 +58,7 @@ public class QrueyResultActivity extends AppCompatActivity {
         CarCradBean bean = (CarCradBean) intent.getSerializableExtra("bean");
         //beans.add(bean.data);
         if (adapter1.getCount() != beans.size()) {
-            //xiangqingBeans.clear();
+
             adapter1.notifyDataSetChanged();
         }
         adapter2.notifyDataSetChanged();
@@ -76,5 +77,6 @@ public class QrueyResultActivity extends AppCompatActivity {
         bean = (CarCradBean) intent.getSerializableExtra("bean");
         beanlist.add(bean);
         beans.add(bean.data);
+        Log.i("*****", "onNewIntent: ");
     }
 }
