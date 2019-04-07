@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#d6d6d6">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:background="@drawable/card_shape"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/item_car_id"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="25dp"
+                android:gravity="center|left"
+                android:text="鲁A10003"/>
+            <TextView
+                android:id="@+id/item_car_count"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="25dp"
+                android:gravity="center|left"
+                android:text="未处理违章次数 1次"/>
+            <TextView
+                android:id="@+id/item_car_feng"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="25dp"
+                android:gravity="center|left"
+                android:text="扣1分  罚款250元"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/item_car_remove"
+            android:layout_marginTop="70dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:src="@mipmap/minus"/>
+    </LinearLayout>
+</LinearLayout>

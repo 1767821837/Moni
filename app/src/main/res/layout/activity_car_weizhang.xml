@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3E51B5">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="车辆违章"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center|bottom"
+        android:text="车辆违章查询"
+        android:textSize="20dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:layout_height="match_parent"
+            android:text="车牌号：" />
+        <TextView
+            android:id="@+id/id_cartop"
+            android:layout_width="20dp"
+            android:gravity="center|left"
+            android:layout_height="match_parent"
+            android:text="鲁"/>
+        <EditText
+            android:id="@+id/ed_carnum"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:background="@drawable/lien_item"/>
+        <Button
+            android:id="@+id/carid_qurey"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_marginRight="40dp"
+            android:layout_height="wrap_content"
+            android:text="查询"/>
+    </LinearLayout>
+
+</LinearLayout>
