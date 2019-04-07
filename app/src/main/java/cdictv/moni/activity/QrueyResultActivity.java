@@ -56,9 +56,7 @@ public class QrueyResultActivity extends AppCompatActivity {
         super.onStart();
         Intent intent = getIntent();
         CarCradBean bean = (CarCradBean) intent.getSerializableExtra("bean");
-        //beans.add(bean.data);
         if (adapter1.getCount() != beans.size()) {
-
             adapter1.notifyDataSetChanged();
         }
         adapter2.notifyDataSetChanged();

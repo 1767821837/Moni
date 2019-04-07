@@ -39,4 +39,14 @@ public class OkhttpApi {
                 .build();
         NetworkApi.request(request,myCall);
     }
+
+    public static  void weather(Mycall myCall) {
+        MediaType parse = MediaType.parse("application/json;chartset=utf-8");
+        RequestBody body = RequestBody.create(parse,"");
+        Request request = new Request.Builder()
+                .url("http://apis.juhe.cn/simpleWeather/query?city=%E6%88%90%E9%83%BD&key=814e668753bef85b705022af5e45a6b5")
+                .get()
+                .build();
+        NetworkApi.request(request,myCall);
+    }
 }

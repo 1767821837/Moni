@@ -57,18 +57,19 @@ public class RecycleActivity extends AppCompatActivity implements View.OnClickLi
 
             @Override
             public void afterTextChanged(Editable s) {
+
+
+                if (s.toString().length() > 0) {
+                    nameboo = true;
+                } else {
+                    nameboo = false;
+                }
                 if (passboo && nameboo) {
                     but_login.setEnabled(true);
                     but_login.setBackgroundResource(R.drawable.butregist);
                 } else {
                     but_login.setEnabled(false);
                     but_login.setBackgroundResource(R.drawable.butlogin);
-                }
-
-                if (s.toString().length() > 0) {
-                    nameboo = true;
-                } else {
-                    nameboo = false;
                 }
             }
         });
@@ -86,6 +87,12 @@ public class RecycleActivity extends AppCompatActivity implements View.OnClickLi
 
             @Override
             public void afterTextChanged(Editable s) {
+
+                if (s.toString().length() >5) {
+                    passboo = true;
+                } else {
+                    passboo = false;
+                }
                 if (passboo && nameboo) {
                     but_login.setEnabled(true);
                     but_login.setBackgroundResource(R.drawable.butregist);
@@ -94,11 +101,6 @@ public class RecycleActivity extends AppCompatActivity implements View.OnClickLi
                     but_login.setBackgroundResource(R.drawable.butlogin);
                 }
 
-                if (s.toString().length() >5) {
-                    passboo = true;
-                } else {
-                    passboo = false;
-                }
             }
         });
     }
